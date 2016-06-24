@@ -1,0 +1,22 @@
+{
+  "name": "angular2-for-beginners-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhades/angular2-for-beginners-starter.git"
+  },
+  "author": "JhadesDev <jhades.dev@gmail.com> (http://blog.jhades.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhades/angular2-for-beginners-starter/issues"
+  },
+  "homepage": "https://github.com/jhades/angular2-for-beginners-starter#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
