@@ -15,6 +15,13 @@
 
     <script src="systemjs.config.js"></script>
     <script>
+
+        document.SYSTEMJS_CONFIG.map.app = 'app',
+                document.SYSTEMJS_CONFIG.packages.app = {main: 'main.ts', defaultExtension: 'ts'};
+
+        System.config(document.SYSTEMJS_CONFIG);
+
+
         System.import('app').catch(function (err) {
             console.error(err);
         });

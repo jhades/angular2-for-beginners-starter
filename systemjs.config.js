@@ -2,7 +2,6 @@
 
     //map tells the System loader where to look for things
     var map = {
-        'app': 'app',
 
         '@angular': 'node_modules/@angular', // sufficient if we didn't pin the version
         '@angular/router': 'node_modules/@angular/router' ,
@@ -15,7 +14,6 @@
 
     //packages tells the System loader how to load when no filename and/or no extension
     var packages = {
-        'app': {main: 'main.ts', defaultExtension: 'ts'},
         'rxjs': {defaultExtension: 'js'},
         'angular2-in-memory-web-api': {main: 'index.js', defaultExtension: 'js'},
     };
@@ -67,13 +65,7 @@
         packages: packages
     };
 
-    System.config(config);
+    document.SYSTEMJS_CONFIG = config;
 
 })(this);
 
-
-/*
- Copyright 2016 Google Inc. All Rights Reserved.
- Use of this source code is governed by an MIT-style license that
- can be found in the LICENSE file at http://angular.io/license
- */
