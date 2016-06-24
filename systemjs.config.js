@@ -1,21 +1,12 @@
-/**
- * PLUNKER VERSION (based on systemjs.config.js in angular.io)
- * System configuration for Angular 2 samples
- * Adjust as necessary for your application needs.
- */
 (function (global) {
-
-    var ngVer = '@2.0.0-rc.3'; // lock in the angular package version; do not let it float to current!
-    var routerVer = '@3.0.0-alpha.7'; // lock router version
-    var formsVer = '@0.1.1'; // lock forms version
 
     //map tells the System loader where to look for things
     var map = {
         'app': 'app',
 
-        '@angular': 'https://npmcdn.com/@angular', // sufficient if we didn't pin the version
-        '@angular/router': 'https://npmcdn.com/@angular/router' + routerVer,
-        '@angular/forms': 'https://npmcdn.com/@angular/forms' + formsVer,
+        '@angular': 'node_modules/@angular', // sufficient if we didn't pin the version
+        '@angular/router': 'node_modules/@angular/router' ,
+        '@angular/forms': 'node_modules/@angular/forms',
         'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api', // get latest
         'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6',
         'ts': 'https://npmcdn.com/plugin-typescript@4.0.10/lib/plugin.js',
@@ -41,9 +32,8 @@
     ];
 
     // Add map entries for each angular package
-    // only because we're pinning the version with `ngVer`.
     ngPackageNames.forEach(function (pkgName) {
-        map['@angular/' + pkgName] = 'https://npmcdn.com/@angular/' + pkgName + ngVer;
+        map['@angular/' + pkgName] = 'node_modules/@angular/' + pkgName;
     });
 
     // Add package entries for angular packages
