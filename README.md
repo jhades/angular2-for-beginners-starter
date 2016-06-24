@@ -37,8 +37,6 @@ If you edit a Typescript file and refresh the browser, the changes will be appli
 
 ## Brought to you by the Angular University
 
-Have a look at our course pipeline at [angular-university.io](https://angular-university.io/), this is the [Angular 2 For Beginners course](https://angular-university.io/course/getting-started-with-angular2):
-
-![Angular 2 For Beginners Course](https://angular-academy.s3.amazonaws.com/angular2-for-beginners.png)
+Have a look at our course pipeline at [angular-university.io](https://angular-university.io/).
 
 
